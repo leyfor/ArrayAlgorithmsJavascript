@@ -17,7 +17,7 @@ for (let lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsort
         }
         
     }
-}
+}   
 
 console.log(array);
 
