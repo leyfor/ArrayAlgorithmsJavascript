@@ -1,3 +1,4 @@
+// BubbleSort function o method
 function bubbleSort(array, i, j) {
     if (i == j) {
         return;
@@ -8,6 +9,7 @@ function bubbleSort(array, i, j) {
     
 }
 
+// Initialize Array
 let array = [55, -22, 20, -15, 30, -3, 7];
 
 for (let lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex-- ) {
@@ -21,6 +23,7 @@ for (let lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsort
 
 console.log(array);
 
+// Displat the array
 for (let index = 0; index < array.length; index++) {
     const element = array[index];
     console.log(element);
