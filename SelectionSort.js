@@ -1,46 +1,31 @@
-// Selection Function
-function swap(array, i, j) {
-    // Compare the elements and check if the array is empty
-    if(i == j || array.length < 1) {
-        return;
-    }
-    
-    // Swap the element of the array
-    let temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+/* SELECTION SORT ALGORITHM */
 
-}
-
-// Display the array to the conSole
-function display(array) {
-    for (const elem of array) {
-      console.log(elem);
-    }
-}
 
 // Unsorted Array
-const IntArray = [20, -22, 5, 55, -77, 30, 40];
+let intArray = [20, -22, 5, 55, -77, 30, 40];
 
 // Implementation of the selectionSort Algorithm
-function selectionSort(array) {
-    for (let lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
-        let largestElemIndex = 0;
-        for (let index = 1; index <= lastUnsortedIndex; index = index + 1) {
-            if (array[index] > array[largestElemIndex]) {
-                largestElemIndex = index;   
+function selectionSort(IntArray) {
+
+    for (let lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
+        let largestElemIndex = 0; // First index
+        for (let i = 1; i <= lastUnsortedIndex; i = i + 1) {
+            if (intArray[i] > intArray[largestElemIndex]) {
+                largestElemIndex = i;
             }
-            
-        } 
-    
-        swap(array, largestElemIndex, lastUnsortedIndex);
+        }
+        swap(intArray, largestElemIndex, lastUnsortedIndex);
+    } 
+        display(IntArray);
         
     }
-    display(array);
     
-}
+    
 
+
+selectionSort(intArray);
 console.log("==============================================");
+console.log(intArray);
 
-selectionSort(IntArray);
+
 
