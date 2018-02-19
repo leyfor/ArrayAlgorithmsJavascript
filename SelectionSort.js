@@ -14,10 +14,10 @@ function selectionSort(IntArray) {
                 largestElemIndex = i;
             }
         }
-        // Swap function from BubbleSort algorithm
+        // Swap function from SelectionSort algorithm
         swap(intArray, largestElemIndex, lastUnsortedIndex);
     } 
-        // Display function from BubbleSort algorithm
+        // Display function from SelectionSort to the console
         display(IntArray);
         
     }
