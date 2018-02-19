@@ -14,8 +14,10 @@ function selectionSort(IntArray) {
                 largestElemIndex = i;
             }
         }
+        // Swap function from BubbleSort algorithm
         swap(intArray, largestElemIndex, lastUnsortedIndex);
     } 
+        // Display function from BubbleSort algorithm
         display(IntArray);
         
     }
@@ -23,8 +25,9 @@ function selectionSort(IntArray) {
     
 
 
-selectionSort(intArray);
+
 console.log("==============================================");
+selectionSort(intArray);
 console.log(intArray);
 
 
